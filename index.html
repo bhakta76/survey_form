@@ -1,1 +1,103 @@
-<h1 id="title"><center>Indian Dinner</center></h1>
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+	<style>
+		body {
+			font-family: sans-serif;
+			padding-left: 20%;
+			padding-right: 20%;
+		}
+		label{
+			font-size: 18px;
+			padding-bottom: 10px;
+			display: block;
+		}
+		input {
+			display: block;
+			width: 100%;
+			padding-bottom: 20px;
+		}
+		textarea{
+			display: block;
+			width: 100%;
+			padding-bottom: 20px;
+		}
+		select {
+			display:block;
+		}
+
+		form{
+			background-color: red;
+			padding: 40px 40px 40px 40px;
+		}
+
+		#button-area{
+		float: left;
+			width: 50%;
+			height: 50%;
+		}
+
+
+	</style>
+
+
+	</head>
+
+	<body>
+		<h1 id="title"><center>Indian Dinner</center></h1>
+		<p id="description">
+		This is a survey for your thoughts on what Indian meals you would like for dinner.
+		</p>
+		<form id="survey-form">
+			<label id="name-label">Name:</label>
+			<input type="text" name="name" id="name" required placeholder="Name"><br>
+			<label id="email-label">Email:</label>
+			<input type="email" name="email" id="email" required placeholder="Email"><br>
+			<label id="number-label">Number:</label>
+			<input type="number" name="number" id="number" min="0" max="10" required placeholder="Number"><br>
+
+			<label for="Dishes">Choose a Dish:</label>
+				<select id="dropdown" name="Dishes">
+				  <option value="dhal bhaath">Dhal Bhaath</option>
+				  <option value="khichree">Khichree</option>
+				  <option value="sev_usad">Sev Usad</option>
+				  <option value="shaak_roti">Shaak Roti</option>
+				  <option value="dhokli">Dhokli</option>
+				  <option value="muthiya">Muthiya</option>
+				</select>
+<br>
+								<textarea placeholder="Additional Comments"></textarea>
+
+	<br>
+			<div id="button-area">
+				<label for="gender-label">Gender:</label>
+				<input type="radio" class="radio-inline" id="male" name="gender" value="male">
+					<label for="male">Male</label><br>
+					<input type="radio" class="radio-inline" id="female" name="gender" value="female">
+					<label for="female">Female</label><br>
+					<input type="radio" class="radio-inline" id="other" name="gender" value="other">
+					<label for="other">Other</label>
+			</div>
+
+			<div id="button-area">
+				<label for="transportation-type-label"> Transportation:</label>
+				<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+					<label for="vehicle1"> I have a bike</label><br>
+					<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+					<label for="vehicle2"> I have a car</label><br>
+					<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+					<label for="vehicle3"> I have a boat</label><br>
+
+			</div>
+
+
+			<input type="submit" id="submit">
+
+		</form>
+		<script type = "text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+	</body>
+
+</html>
